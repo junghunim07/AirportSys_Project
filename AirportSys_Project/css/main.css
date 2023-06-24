@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {margin:0; padding:0; box-sizing: border-box;}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2020/06/26/101700332.1.jpg") no-repeat center;
+	animation: slide 12s infinite;
+	background-size: cover;
+}
+@keyframes slide {
+	0% {
+		background-image: url("http://res.heraldm.com/content/image/2016/11/20/20161120000213_0.jpg");
+	}
+	25% {
+		 background-image: url("https://dimg.donga.com/wps/NEWS/IMAGE/2020/06/26/101700332.1.jpg");
+	}
+	50% {
+		background-image: url("http://www.econovill.com/news/photo/201911/378558_288861_229.jpg");
+	}
+	75% {
+		background-image: url("https://news.kbs.co.kr/data/news/2019/05/07/4195445_m2G.jpg");
+	}
+}
+body::before {
+	content:"";
+	position: absolute; z-index: 1;
+	top: 0; right: 0; bottom: 0; left:0;
+	background-color: rgba(0,0,0,0);
+}
+.gomain-form {
+	position: absolute; 
+	left:0; top: 0; z-index : 2;
+}
+.gomain-form button {
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px; color: #000;
+	font-weight: bold;
+	outline: none;
+}
+.checkIN-form {
+	position: absolute; 
+	right:100px; top: 0; z-index : 2;
+}
+.checkIN-form button {
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px; color: #000;
+	font-weight: bold;
+	outline: none;
+}
+.login-form {
+	position: absolute; 
+	right:0; top: 0; z-index : 2;
+}
+.login-form button {
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px; color: #000;
+	font-weight: bold;
+	outline: none;
+}
+.main-form { position: relative; z-index: 2; }
+.main-form h1 {
+	font-size: 50px; color: #000;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.string-area {width: 400px; position: relative;}
+.string-area input {
+	width: 100%;
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-size: 18px; color: #fff;
+	outline: none;
+}
+.string-area label {
+	position: absolute; left: 10px; top: 15px;
+	font-size: 20px; color: #999;
+	transition: all.5s ease;
+}
+.string-area input:focus + label,
+.string-area input:valid + label {
+	top: 2px;
+	font-size: 8px; color: #166cea;
+}
+.date-area {width: 400px; position: relative;}
+.date-area input {
+	width: 100%;
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-size: 18px; color: #000;
+	outline: none;
+}
+.date-area label {color: #999;}
+.date-area input:focus + label,
+.date-area input:valid + label {
+	font-size: 12px; color: #166cea;
+}
+.btn-area {width: 400px; position: relative;}
+.btn-area button {
+	width: 100%; height: 50px;
+	background: #166cea;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+}

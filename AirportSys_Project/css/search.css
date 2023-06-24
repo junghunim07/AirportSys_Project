@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {margin:0; padding:0; box-sizing: border-box;}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2020/06/26/101700332.1.jpg") no-repeat center;
+	background-size: cover;
+}
+body::before {
+	content:"";
+	position: absolute; z-index: 1;
+	top: 0; right: 0; bottom: 0; left:0;
+	background-color: rgba(0,0,0,.5);
+}
+.gomain-form {
+	position: absolute; 
+	left:0; top: 0; z-index : 2;
+}
+.gomain-form button {
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px; color: #000;
+	font-weight: bold;
+	outline: none;
+}
+.checkIN-form {
+	position: absolute; 
+	right:100px; top: 0; z-index : 2;
+}
+.checkIN-form button {
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px; color: #000;
+	font-weight: bold;
+	outline: none;
+}
+.login-form {
+	position: absolute; 
+	right:0; top: 0; z-index : 2;
+}
+.login-form button {
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px; color: #000;
+	font-weight: bold;
+	outline: none;
+}
+.container {position: relative; z-index: 2;
+}
+.table-area {
+	width: 1000px; position: relative;
+	text-align:center;
+}
+.table-area th {
+	font-size: 20px; color: #fff;
+}
+.table-area td {
+	font-size: 18px; color: #fff;
+}
+.table-area button {
+	width: 50%; height: 30px;
+	font-size: 18px; color: #000;
+	background: #999;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
